@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Activity 3</title>
+    </head>
+    <body>
+        <p>Finding the largest number using arguments of objects</p>
+        <p id="max_no"></p>
+        <script>
+            function max_number(){
+i=0;
+max=0;
+for(i=0;i<arguments.length;i++){
+   if(arguments[i]>max){
+    max=arguments[i]
+   } 
+}
+return max
+
+            }
+
+            document.getElementById("max_no").innerHTML= max_number(1,2,3,4,5)
+        </script>
+    </body>
+</html>
